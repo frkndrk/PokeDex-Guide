@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sniglet', cursive;
+    background: linear-gradient(to right, #eb5a0c, #efdc0e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#header {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.form {
+    margin-top: 30px;
+    position: relative;
+}
+
+.form input {
+    width: 50px;
+    height: 50px;
+    border:none;
+    border-radius: 5px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form button {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #5f0303;
+    transition: transform 0.3s ease;
+}
+
+.form.active input{
+    width: 220px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.form.active button {
+    transform: translateX(180px);
+    background-color: #fff;
+    color: tomato;
+}
+
+.poke-container {
+    width: 50%;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.poke-card {
+    margin: 5px;
+    padding: 20px;
+    background-color: #eb5a0c;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+.poke-image img{
+    width: 150px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 75% 30% 60% / 60% 40% 50%;
+    
+}
+
+.poke-image img:hover {
+    opacity: 0.8;
+    transform: scale(110%);
+}
+
+.poke-info {
+    margin-top: 10px;
+}
+
+.poke-info small {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 5px 10px;
+    color: #f8e5e5;
+    font-size: 14px;
+}
+
+.poke-info h2 {
+    margin-top: 10px;
+    color: #f8e5e5;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.poke-property {
+    color: #f8e5e5;
+    margin: 10px 0px;
+    font-size: 0.8rem;
+}
+
+.poke-property i {
+    margin: 0px 8px;
+}
+
+.poke-type {
+    color:#f8e5e5;
+    font-size: 1.1rem;
+}
